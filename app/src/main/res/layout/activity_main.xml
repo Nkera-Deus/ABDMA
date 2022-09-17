@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Welcome to"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/heading3_regular"
+        android:text="ABDMA"
+        android:textColor="@color/primary_orange"
+        android:textSize="65sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Delivered as Expected"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txt3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="About Us"
+        android:textColor="@color/primary_orange" />
+
+    <Button
+        android:id="@+id/btnAccounts"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnAboutUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Accounts"
+        android:textColor="@color/primary_orange" />
+
+    <Button
+        android:id="@+id/btnLocateService"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnAccounts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Locate Service "
+        android:textColor="@color/primary_orange" />
+
+
+    <TextView
+        android:id="@+id/txtCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLocateService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="a Nkera17.5 product"
+        android:textColor="@color/primary_orange"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

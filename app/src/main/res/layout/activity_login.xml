@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Welcome to"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/heading3_regular"
+        android:text="ABDMA"
+        android:textColor="@color/primary_orange"
+        android:textSize="65sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Delivered as Expected"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtBName"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="BName"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtBName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Type"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtType"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Username"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtUsername"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Password"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtBName"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt3"
+        android:textColor="@color/primary_orange"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/txtType"
+        android:background="@drawable/custom_edt"
+
+        />
+
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/edtBName"
+        android:textColor="@color/primary_orange"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/txtBName"
+        android:background="@drawable/custom_edt"
+
+        />
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/spinnerType"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/primary_orange"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/txtUsername"
+        android:background="@drawable/custom_edt"
+
+        />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/edtUsername"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/primary_orange"
+        android:layout_toRightOf="@id/txtPassword"
+        android:background="@drawable/custom_edt"
+        android:inputType="textPassword"
+
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/edtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:text="Login"
+        android:textColor="@color/primary_orange"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:text="forgot password"
+        android:textSize="15sp"
+        android:textColor="@color/primary_orange"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/btnForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="a Nkera17.5 product"
+        android:textColor="@color/primary_orange"
+        android:textSize="15sp"
+
+
+        />
+
+
+</RelativeLayout>

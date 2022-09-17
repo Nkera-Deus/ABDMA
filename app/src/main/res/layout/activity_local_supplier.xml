@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    tools:context=".LocalSupplier">
+
+    <TextView
+        android:id="@+id/txtbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/heading3_regular"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtDistributor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/txtbname"
+        android:fontFamily="@font/heading3_regular"
+        android:text="Local Supplier"
+        android:textColor="@color/primary_orange"
+        android:textSize="18sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnDistributors"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtDistributor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Distributors"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnOrders"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnDistributors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Orders"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnMakeOrder"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnOrders"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Make Order"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnSupplyInfo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnMakeOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Supply Info"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnRoute"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnSupplyInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Route"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnRoute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Log Out"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp"
+
+        />
+
+</RelativeLayout>

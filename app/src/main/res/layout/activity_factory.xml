@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    tools:context=".Factory">
+
+    <TextView
+        android:id="@+id/txtbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/heading3_regular"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtFactory"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/txtbname"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/heading3_regular"
+        android:text="Factory"
+        android:textColor="@color/primary_orange"
+        android:textSize="18sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnOrders"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtFactory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Orders"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnPromotions"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnOrders"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Promotions"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnInbox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnPromotions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Inbox"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnOutbox"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnInbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Outbox"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnSupplyInfo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnOutbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Supply Info"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnSupplyInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Log Out"
+        android:textColor="@color/primary_orange"
+        android:textSize="25dp"
+
+        />
+
+
+</RelativeLayout>
