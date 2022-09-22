@@ -8,7 +8,7 @@
     tools:context=".AboutUsActivity">
 
     <RelativeLayout
-        android:id="@+id/linearlayout"
+        android:id="@+id/relativelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -71,10 +71,10 @@
             android:layout_below="@id/txt03"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:background="@color/grass_green"
+            android:background="@drawable/custom_textview"
             android:fontFamily="@font/heading01_regular"
             android:gravity="center_horizontal"
-            android:text="We are a software company that finds pride in producing software that is efficient andreliable to our customers with the ability to satisfy their needs and expectations.We also interest ourselves in art and design products that range from drawings to paintingsand computer graphics. Our passion is greatly embedded in doing successful business"
+            android:text="To produce reliable, secure and artistically developed software for users productivity"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -92,8 +92,26 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/txt06"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt05"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_textview"
+            android:fontFamily="@font/heading01_regular"
+            android:gravity="center_horizontal"
+            android:text="To become one of the biggest software companies that respect values and user satisfaction while we embrace the artistic values and fundamentals of software."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
 
     </RelativeLayout>
+
+
+
+
 
 
 

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import androidx.appcompat.widget.SearchView;
 import android.location.Address;
 import android.location.Geocoder;
+
+import com.example.abdma.databinding.ActivityLocateServiceBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -17,21 +19,19 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.List;
 
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
-import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 
 public class GetServiceLocation extends FragmentActivity implements OnMapReadyCallback {
 
-    GoogleMap map;
+
     SupportMapFragment mapFragment;
     SearchView searchView;
-
+    GoogleMap mMap;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_service_location);
+
 
         searchView =findViewById(R.id.search_view);
         mapFragment =(SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.google_map);
@@ -69,10 +69,10 @@ public class GetServiceLocation extends FragmentActivity implements OnMapReadyCa
                     LatLng latLng = new LatLng(address.getLatitude(),address.getLongitude());
 
                     //this code below adds marker to the position
-                    map.addMarker(new MarkerOptions().position(latLng).title(location));
+                    mMap.addMarker(new MarkerOptions().position(latLng).title(location));
 
                     //here we animate the camera to the desired position
-                    map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
 
                 }
                 return false;
@@ -80,6 +80,7 @@ public class GetServiceLocation extends FragmentActivity implements OnMapReadyCa
 
             @Override
             public boolean onQueryTextChange(String newText) {
+
                 return false;
             }
         });
@@ -91,8 +92,8 @@ public class GetServiceLocation extends FragmentActivity implements OnMapReadyCa
 
 
     @Override
-    public void onMapReady(@NonNull GoogleMap googleMap) {
-        map = googleMap;
+    public void onMapReady( GoogleMap googleMap) {
+        mMap = googleMap;
         
     }
 }

@@ -31,8 +31,13 @@ public class Distributor extends AppCompatActivity {
         String s1 = b1.getString("17.5");
         txtbname.setText(s1);
 
-
-
+        route.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Routing.class);
+                startActivity(i);
+            }
+        });
 
         makeOrder.setOnClickListener(new View.OnClickListener() {
             @Override

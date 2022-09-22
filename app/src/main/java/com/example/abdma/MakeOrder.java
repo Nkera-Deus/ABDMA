@@ -115,7 +115,7 @@ public class MakeOrder extends AppCompatActivity {
                     buffer.append("Unit cost:" + res.getString(3) + "\n");
                     buffer.append("Total cost:" + res.getString(4) + "\n");
                     buffer.append("Destination:" + res.getString(5) + "\n");
-                    buffer.append("Buying from:" + res.getString(6) + "\n");
+                    buffer.append("Buying from:" + res.getString(6) + "\n\n");
 
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(MakeOrder.this);

@@ -9,7 +9,7 @@
         <entry key="..\:/ABDMA/app/src/main/res/drawable/custom_searchview.xml" value="0.2105" />
         <entry key="..\:/ABDMA/app/src/main/res/drawable/custom_textview.xml" value="0.135" />
         <entry key="..\:/ABDMA/app/src/main/res/font/myfonts.xml" value="0.234375" />
-        <entry key="..\:/ABDMA/app/src/main/res/layout/activity_about_us.xml" value="0.33" />
+        <entry key="..\:/ABDMA/app/src/main/res/layout/activity_about_us.xml" value="0.23100303951367782" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_accounts.xml" value="0.25" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_check_services.xml" value="0.20416666666666666" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_consumer_order.xml" value="0.17074275362318841" />
@@ -25,10 +25,12 @@
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_make_order.xml" value="0.20416666666666666" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_message.xml" value="0.20416666666666666" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_retailer.xml" value="0.19010416666666666" />
+        <entry key="..\:/ABDMA/app/src/main/res/layout/activity_route_checker.xml" value="0.17753623188405798" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_routing.xml" value="0.20416666666666666" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/activity_see_services.xml" value="0.20416666666666666" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/fragment_locate_service.xml" value="0.20416666666666666" />
         <entry key="..\:/ABDMA/app/src/main/res/layout/fragment_map.xml" value="0.20416666666666666" />
+        <entry key="..\:/ABDMA/app/src/main/res/layout/fragment_routing.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

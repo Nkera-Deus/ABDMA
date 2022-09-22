@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -30,12 +31,29 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyA5Op6WGkdOG4h4UikGS2cjJIr_RPOIKsY" />
+            android:value="@string/map_key" />
 
         <activity
-            android:name=".Routing"
+            android:name=".RouteChecker"
             android:exported="false"
-            android:label="@string/title_activity_routing" />
+            android:label="@string/title_activity_route_checker" />
+        <activity
+            android:name=".Routing"
+            android:exported="false" />
+        <activity
+            android:name=".ScrollingAdvertsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_scrolling_adverts"
+            android:theme="@style/Theme.ABDMA.NoActionBar" />
+
+        <service
+            android:name=".FirebasePushNotification"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".GetServiceLocation"
             android:exported="false" />

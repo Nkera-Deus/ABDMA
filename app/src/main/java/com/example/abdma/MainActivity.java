@@ -19,6 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        // firebase push notification
+        Intent intentBackgroundServive = new Intent(this,FirebasePushNotification.class);
+        startService(intentBackgroundServive);
+
+
+
         aboutUs = (Button)findViewById(R.id.btnAboutUs);
         accounts = (Button)findViewById(R.id.btnAccounts);
         locateService = (Button)findViewById(R.id.btnLocateService);

@@ -1,9 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Routing" />
+    tools:context=".Routing">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route"
+        android:textSize="30sp"
+        android:fontFamily="@font/heading3_regular"
+        android:textColor="@color/primary_orange"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLocation"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Enter location by name"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edt"
+        android:hint=" location"
+        android:textColorHint="@color/primary_orange"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Lat"
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLat"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Long"
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtLat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt1"
+        android:layout_toRightOf="@id/txtLat"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edt"
+        android:hint="enter latitude"
+        android:textColorHint="@color/primary_orange"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/edtLong"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLat"
+        android:layout_toRightOf="@id/txtLat"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edt"
+        android:hint="enter longitude"
+        android:textColorHint="@color/primary_orange"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txtLocationByName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Enter Home Location"
+        android:textColor="@color/primary_orange"
+        android:textSize="25sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtLocation"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLocationByName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edt"
+        android:hint="home location"
+        android:textColorHint="@color/primary_orange"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLong"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text=" Add   "
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/btndrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLong"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/btnAdd"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="Drive"
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLong"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/btndrive"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text=" Save "
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="share"
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/btnshare"
+        android:background="@drawable/custom_button"
+        android:text="Route"
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+        android:fontFamily="@font/heading01_regular"
+
+        />
+
+    <Button
+        android:id="@+id/btnCycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSave"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/btnRoute"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="cycle "
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnViewMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnshare"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text=" View MAP "
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCycle"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/btnViewMap"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/heading01_regular"
+        android:text="    clear   "
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp"
+
+        />
+
+
+
+    </RelativeLayout>
